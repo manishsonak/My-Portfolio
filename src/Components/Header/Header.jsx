@@ -1,4 +1,6 @@
 import  { useEffect, useState } from 'react';
+import { IoMenu } from 'react-icons/io5';
+import { RxCross2 } from 'react-icons/rx';
 import ScrollReveal from 'scrollreveal';
 
 
@@ -47,13 +49,17 @@ const Header = () => {
   return (
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <a href="#" className="logo">MANISH Portfolio</a>
-      <i className={`fa-solid fa-bars ${isMenuIconToggled ? 'fa-xmark' : ''}`} id="menu-icon" onClick={handleMenuIconClick}></i>
+      <i id="menu-icon" onClick={handleMenuIconClick}>
+      {
+        !isMenuIconToggled ? <IoMenu /> : <RxCross2 />
+      }
+      </i>
       <nav className={`navbar ${isMenuIconToggled ? 'active' : ''}`}>
-        <a href="#home" className={activeNavLink === 'home' ? 'active' : ''}>Home</a>
-        <a href="#about" className={activeNavLink === 'about' ? 'active' : ''}>About</a>
-        <a href="#service" className={activeNavLink === 'service' ? 'active' : ''}>Skills</a>
-        <a href="#projects" className={activeNavLink === 'projects' ? 'active' : ''}>Projects</a>
-        <a href="#contact" className={activeNavLink === 'contact' ? 'active' : ''}>Contact</a>
+        <a onClick={()=>setIsMenuIconToggled(false)} href="#home" className={activeNavLink === 'home' ? 'active' : ''}>Home</a>
+        <a onClick={()=>setIsMenuIconToggled(false)} href="#about" className={activeNavLink === 'about' ? 'active' : ''}>About</a>
+        <a  onClick={()=>setIsMenuIconToggled(false)} href="#service" className={activeNavLink === 'service' ? 'active' : ''}>Skills</a>
+        <a onClick={()=>setIsMenuIconToggled(false)} href="#projects" className={activeNavLink === 'projects' ? 'active' : ''}>Projects</a>
+        <a onClick={()=>setIsMenuIconToggled(false)} href="#contact" className={activeNavLink === 'contact' ? 'active' : ''}>Contact</a>
       </nav>
     </header>
   );

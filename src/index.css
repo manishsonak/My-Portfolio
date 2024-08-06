@@ -443,6 +443,7 @@ textarea:focus {
   #menu-icon {
     display: block;
   }
+  
   .navbar {
     position: absolute;
     top: 100%;
@@ -504,6 +505,10 @@ textarea:focus {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .header{
+    max-width: 100vw;
+    max-height: 40px;
   }
   .contact form .input-box input {
     width: 100%;
