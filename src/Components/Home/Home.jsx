@@ -11,10 +11,10 @@ function Home() {
         <p>
           I am a Web developer looking for opportunities to expand my skills.</p>
         <div className="social-media">
-          <a href="https://www.facebook.com/profile.php?id=100025851462616"><FaFacebook /></a>
-          <a href="https://www.instagram.com/manish_sonak/"><FaInstagram /></a>
-          <a href="https://github.com/manishsonak"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/manish-sonak-26233129a/"><FaLinkedin /></a>
+          <a target='_blank' href="https://www.facebook.com/profile.php?id=100025851462616"><FaFacebook /></a>
+          <a target='_blank' href="https://www.instagram.com/manish_sonak/"><FaInstagram /></a>
+          <a target='_blank' href="https://github.com/manishsonak"><FaGithub /></a>
+          <a target='_blank' href="https://www.linkedin.com/in/manish-sonak-26233129a/"><FaLinkedin /></a>
         </div>
         <a href="./image/ManishCV.pdf" download="" className="btn">Download CV</a>
       </div>

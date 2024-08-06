@@ -639,3 +639,191 @@ textarea:focus{
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --bg-color: #031B29;
+    --second-bg-color: #03141fbc;
+    --text-color: #ffffff;
+    --main-color: #15A3EF;
+}
+
+.about-project {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.project-link {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--main-color);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.project-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.technologies,
+.project-features,
+.project-challenges,
+.additional-links {
+    margin-top: 2rem;
+}
+
+.technologies h3,
+.project-features h3,
+.project-challenges h3,
+.additional-links h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tech-list,
+.feature-list,
+.challenge-list,
+.link-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.tech-list li,
+.feature-list li,
+.challenge-list li,
+.link-list li {
+    margin: 0.5rem 0;
+}
+
+.additional-links a {
+    color: var(--main-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--main-color);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.additional-links a:hover {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
