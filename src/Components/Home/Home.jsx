@@ -1,5 +1,6 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import image from'../../assets/Logo.png'
+import CV from './images/ManishCV.pdf'
 
 function Home() {
   return (
@@ -16,7 +17,8 @@ function Home() {
           <a target='_blank' href="https://github.com/manishsonak"><FaGithub /></a>
           <a target='_blank' href="https://www.linkedin.com/in/manish-sonak-26233129a/"><FaLinkedin /></a>
         </div>
-        <a href="./image/ManishCV.pdf" download="" className="btn">Download CV</a>
+        <a href={CV} download='ManishCV.pdf' className="btn">Download CV</a>
+
       </div>
       <div className="home-img">
         <img src={image} alt="Sonak" />
