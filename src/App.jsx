@@ -16,7 +16,7 @@ function App() {
           {/* Project Details */}
           <Route path="/detail/:id" element={<AboutProject/>}/>
           {/* Page Not Found */}
-          <Route path="*" element={<Portfolio/>}/>
+          <Route path="*" element={<PageNotFound/>}/>
         </Routes>
       </Router>
     </>
