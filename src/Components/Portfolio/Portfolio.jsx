@@ -9,12 +9,19 @@ import Skills from "../Skills/Skills"
 function Portfolio() {
   return (
     <>
+    {/* Navbar */}
         <Header/>
+        {/* Hero Section */}
         <Home/>
+        {/* About Section */}
         <About/>
+        {/* Skill Section */}
         <Skills/>
+        {/* Project Section */}
         <Projects/>
+        {/* Contact Section */}
         <Contact/>
+        {/* Footer Section */}
         <Footer/>
     </>
   )

@@ -54,7 +54,7 @@ function Projects() {
 
   return (
     <section className="portfolio" id="projects">
-    <div className="heading">Latest <span>Project</span></div>
+    <div className="heading">My <span>Projects</span></div>
     <div className="portfolio-container">
        
        {

@@ -1,3 +1,4 @@
+import PageNotFound from "./Components/PageNotFound/PageNotFound"
 import Portfolio from "./Components/Portfolio/Portfolio"
 
 import AboutProject from "./Components/Projects/AboutProjects/AboutProject"
@@ -10,8 +11,12 @@ function App() {
     <>
       <Router>
         <Routes>
+          {/* Portfolio  */}
           <Route path="/" element={<Portfolio/>}/>
+          {/* Project Details */}
           <Route path="/detail/:id" element={<AboutProject/>}/>
+          {/* Page Not Found */}
+          <Route path="*" element={<PageNotFound/>}/>
         </Routes>
       </Router>
     </>

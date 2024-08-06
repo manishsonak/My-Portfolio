@@ -3,6 +3,8 @@ import ScrollReveal from 'scrollreveal';
 
 
 const Header = () => {
+
+  
   const [isMenuIconToggled, setIsMenuIconToggled] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState('');
   const [isSticky, setIsSticky] = useState(false);
